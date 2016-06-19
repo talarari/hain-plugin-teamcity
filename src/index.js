@@ -95,7 +95,7 @@ module.exports = (pluginContext) => {
             });
     };
 
-    const debouncedSearchProjects = debounce(searchProjects,200/);
+    const debouncedSearchProjects = debounce(searchProjects,200);
 
     const startup = ()=>{
         initClient(preferences.get());
