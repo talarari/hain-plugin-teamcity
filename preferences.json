@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "title": "Teamcity User Name"
+    },
+    "password": {
+      "type": "string",
+      "title": "Teamcity Password"
+    },
+    "teamcityBaseUrl": {
+      "type": "string",
+      "title": "Teamcity Base Url"
+    }
+
+  }
+}

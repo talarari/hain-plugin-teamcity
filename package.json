@@ -1,0 +1,32 @@
+{
+  "name": "hain-plugin-teamcity",
+  "version": "1.0.0",
+  "description": "teamcity plugin for hain",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talarari/hain-plugin-teamcity"
+  },
+  "keywords": [
+    "hain-0.4.0"
+  ],
+  "author": "talarari",
+  "license": "MIT",
+  "hain": {
+    "prefix": "/teamcity ",
+    "usage": "/teamcity search term",
+    "icon": "./icon.png",
+    "redirect": "/teamcity"
+  },
+  "dependencies": {
+    "teamcity-rest-api": "0.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "scripts": {
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile"
+  }
+}
